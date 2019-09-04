@@ -35,6 +35,9 @@ then
 (2 ) if user is already set, it will be much easier
 	SET PASSWORD = PASSWORD('your_ps');
 
+==============================
+5. delete user that is created
+mysql> DROP USER 'jimmy'@'localhost';
 
 
 
