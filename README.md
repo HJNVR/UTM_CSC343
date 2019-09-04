@@ -3,6 +3,7 @@ steps of setting sql(sql workbench and sql server)
 
 1.SQL server:
 download the latest sql https://dev.mysql.com/downloads/mysql/
+
 ==============================
 
 2.set root and remember the passward you set
