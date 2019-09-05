@@ -88,15 +88,26 @@ mysql > create table ;
 e.g:	
 mysql> Create table personal_info
 (primary key (id), -- this means id is the main key to 
-  id int(3); -- 3 means the range will be between 000 - 999 . so this can be vary
-  first_name varchar(100); -- the maximum size of varchar is 100
-  last_name varhcar(100); -- same as above
+  id int(3), -- 3 means the range will be between 000 - 999 . so this can be vary
+  first_name varchar(100), -- the maximum size of varchar is 100
+  last_name varhcar(100), -- same as above
   height decimal(3,1) -- this means height can be 3 digits and 2 decimal
   );
 
 (7) delete a database
 drop database dname;
 
+(8) after steps in (6), we have created a table. Then to show the information of the table, we use the command below
+mysql> describe tablename
 
+(9) add data to the table we created
+mysql> insert into personal_info 
+    -> values
+    -> (001, 'Yinzhe', 'Li', '160');
+
+this will insert a row of data into the table we created
+
+7.important command for query
+==============================
 
 
