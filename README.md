@@ -54,18 +54,15 @@ enter passward:
 	this is for root to change passward
 (2 ) if user is already set, it will be much easier
 	SET PASSWORD = PASSWORD('your_ps');
-or 
-
-alter user user() identified by 'your_ps'
+or alter user user() identified by 'your_ps'
 
 5. delete user that is created
 ==============================
 
 mysql> DROP USER 'jimmy'@'localhost';
-
+so on 
 
 6. commands in mysql server/ shell
-
 ==============================
 
 
