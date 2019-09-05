@@ -56,15 +56,16 @@ enter passward:
 	SET PASSWORD = PASSWORD('your_ps');
 or alter user user() identified by 'your_ps'
 
+
 5. delete user that is created
 ==============================
 
-mysql> DROP USER 'jimmy'@'localhost';
+(1)mysql> DROP USER 'jimmy'@'localhost';
 so on 
 
 6. commands in mysql server/ shell
 ==============================
-
+(1) 
 
 
 
