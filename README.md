@@ -87,9 +87,12 @@ mysql > create table ;
 * there is a difference between mysql and execl : when initalizing table in sql,it can not be empty. However, when table of mysql is created, the content and type of the data must be set.
 e.g:	
 mysql> Create table personal_info
-( Primary key (id), -- this means id is the main key to 
+(primary key (id), -- this means id is the main key to 
   id int(3); -- 3 means the range will be between 000 - 999 . so this can be vary
-  first_name varchar(100);
+  first_name varchar(100); -- the maximum size of varchar is 100
+  last_name varhcar(100); -- same as above
+  height decimal(3,1) -- this means height can be 3 digits and 2 decimal
+  );
 
 (7) delete a database
 drop database dname;
