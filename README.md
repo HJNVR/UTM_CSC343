@@ -13,7 +13,9 @@ open .bash_profile and set path directly to the path where the sql was downloade
 
 $open -t .bash_profile
 
-in .bash_profile, add the sentence below export PATH=${PATH}:/usr/local/mysql/bin/
+in .bash_profile, add the sentence
+
+ below export PATH=${PATH}:/usr/local/mysql/bin/
 
 open a new terminal $mysql -u root -p
 mysql>
@@ -23,30 +25,47 @@ mysql > show databases;
 
 3.simple setting of mysql server
 
-enter mysql shell
+* There are two ways of setting logging account
+
+Way One: log in as root 
+
+$ mysql -u root -p 
+enter passward: 
 then 
 (1) mysql> CREATE USER 'jimmy'@'localhost' IDENTIFIED BY 'your_password';
 	if it shows ok, then it is done
+
+(2) GRANT ALL PRIVILEGES ON *.* TO 'jimmy'@'localhost' WITH GRANT OPTION;
+  // this line gives the user you set all rights to deal with databases
+
 (2) then just use $mysql -u user -p (user is jimmy here)
 
 (3) we can also check where user is set successfully 
     mysql> SHOW GRANTS FOR 'admin'@'localhost';
 
+Way two: 
+
+after setting, $mysql -u username -p 
+enter passward:
+
 ==============================
 
-4.modify passward
+4.modify passward: SET or ALERT
 
 (1) mysql> SET PASSWORD FOR 'jimmy'@'localhost' = PASSWORD('your_ps');
 	this is for root to change passward
 (2 ) if user is already set, it will be much easier
 	SET PASSWORD = PASSWORD('your_ps');
+or 
 
+alter user user() identified by 'your_ps';
 ==============================
 
 5. delete user that is created
 
 mysql> DROP USER 'jimmy'@'localhost';
 
+==============================
 
 
 
