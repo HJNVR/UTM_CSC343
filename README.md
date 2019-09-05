@@ -57,13 +57,13 @@ enter passward:
 or alter user user() identified by 'your_ps'
 
 
-5. delete user that is created
+5.delete user that is created
 ==============================
 
 (1)mysql> DROP USER 'jimmy'@'localhost';
 so on 
 
-6. commands in mysql server/ shell
+6.commands in mysql server/ shell
 ==============================
 (1) 
 
