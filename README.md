@@ -60,12 +60,14 @@ alter user user() identified by 'your_ps';
 
 
 5. delete user that is created
+
 ==============================
 
 mysql> DROP USER 'jimmy'@'localhost';
 
 
 6. commands in mysql server/ shell
+
 ==============================
 
 
