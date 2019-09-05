@@ -1,5 +1,6 @@
 steps of setting sql(sql workbench and sql server)
 ==============================
+tips: in readme, the points sentence show be written as exactly 
 
 1.SQL server:
 ==============================
@@ -65,7 +66,33 @@ so on
 
 6.commands in mysql server/ shell
 ==============================
-(1) 
+(1) check what databases are there in current account
+mysql> show datadbases;
+
+(2) enter the database you want:
+mysql> use dname;
+
+(3) show what database you are currently in
+mysql> show database();
+
+(4) create a new database
+mysql> create database dname;
+
+(5) show what tables are there in the current database
+mysql> show table person;
+
+(6) create a new table 
+mysql > create table ;
+
+* there is a difference between mysql and execl : when initalizing table in sql,it can not be empty. However, when table of mysql is created, the content and type of the data must be set.
+e.g:	
+mysql> Create table personal_info
+( Primary key (id), -- this means id is the main key to 
+  id int(3); -- 3 means the range will be between 000 - 999 . so this can be vary
+  first_name varchar(100);
+
+(7) delete a database
+drop database dname;
 
 
 
