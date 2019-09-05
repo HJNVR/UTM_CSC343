@@ -6,9 +6,8 @@ steps of setting sql(sql workbench and sql server)
 
 download the latest sql https://dev.mysql.com/downloads/mysql/
 
-==============================
-
 2.set root and remember the passward you set
+==============================
 
 open .bash_profile and set path directly to the path where the sql was downloaded extend: The ~/.bash_profile file is a configuration file for configuring user environments. The users can modify the default settings and add any extra configurations in it. $ls -al (check to make sure there is a .bash_profile)
 
@@ -22,9 +21,8 @@ open a new terminal $mysql -u root -p
 mysql>
 mysql > show databases;
 
-==============================
-
 3.simple setting of mysql server
+==============================
 
 * There are two ways of setting logging account
 
@@ -49,9 +47,8 @@ Way two:
 after setting, $mysql -u username -p 
 enter passward:
 
-==============================
-
 4.modify passward: SET or ALERT
+==============================
 
 (1) mysql> SET PASSWORD FOR 'jimmy'@'localhost' = PASSWORD('your_ps');
 	this is for root to change passward
@@ -60,13 +57,15 @@ enter passward:
 or 
 
 alter user user() identified by 'your_ps';
-==============================
 
 5. delete user that is created
+==============================
 
 mysql> DROP USER 'jimmy'@'localhost';
 
+6. commands in mysql server/ shell
 ==============================
+
 
 
 
