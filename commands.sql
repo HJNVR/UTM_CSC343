@@ -1,34 +1,38 @@
-1. The select statement 
+/*1. The select statement 
 	select <column_name>, <column_name> from <table_name>
-	e.g. select pro_id, prod_name, prod_price from Products;
-  (1) select * from Products;
-  (2) select * from Products limit 5;
+	e.g. select pro_id, prod_name, prod_price from Products; 
+*/
+	select * from Products;
+	select * from Products limit 5;
 
-2. Ways to constrain the numebr of results
+/*2. Ways to constrain the numebr of results
   (3) distinct qualifier  -- this will output distince data within the table
 	with distinct: 
+*/
 		select distinct vend_id from products;
 		select distinct vend_id, pro_price from products;
 		-- always put distinct before any column and it will apply to all the following columns.
-  (4) where clause
+#  (4) where clause
 
-3. Comments
+/*3. Comments
 (1) -- after two hyphens, it will be a comment
 (2) # this make an entire line comment
 (3) /* */ 
+*/
 
-Practice 1.1: 
+/*Practice 1.1: 
 # schemas = database
 1. select all colums from table orders and only display 5 records 
+*/
 	sol'n: selsect * from orders;
-2. only want to check city and province from table orders
+# 2. only want to check city and province from table orders
 	sol'n: select city, province form orders
-3. want to check different city in table orders
+# 3. want to check different city in table orders
 	sol'n: select distinct city form orders: 
-4. comment out one of the query you juse wrote down
+# 4. comment out one of the query you juse wrote down
 	sol'n: use # or -- or /* */ 
 
-4. sort by using order by 
+/*4. sort by using order by 
 	* order by clause: 
 		(1) make sure the order by clause is the last cluse 
 			e.g select prod_name from Products order by prod_name
@@ -40,9 +44,12 @@ Practice 1.1:
 			-- this means 
 			e.g select prod_id, prod_price, prod_name
 			form Products
-			order by 2,3; 
-
-
+			order by 2,3;
+		(4) specify sort direction 
+			by default, it is ascending sort order
+			or we can have descending sort order
+			select city from orders order by 1 desc;
+		
 
 
  
