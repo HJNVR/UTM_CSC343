@@ -28,7 +28,21 @@ Practice 1.1:
 4. comment out one of the query you juse wrote down
 	sol'n: use # or -- or /* */ 
 
- 
+4. sort by using order by 
+	* order by clause: 
+		(1) make sure the order by clause is the last cluse 
+			e.g select prod_name from Products order by prod_name
+		(2) sorty by multiple columns
+			e.g select prod_id, prod_price, prod_name
+			    from Products 
+			    order by prod_price, prod_name; -- write line by line is very clear
+		(3) sort by column position
+			-- this means 
+			e.g select prod_id, prod_price, prod_name
+			form Products
+			order by 2,3; 
+
+
 
 
  
