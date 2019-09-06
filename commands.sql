@@ -50,8 +50,26 @@
 			or we can have descending sort order
 			select city from orders order by 1 desc;
 		
+*/
 
+/*5. filter data by using where caluse
+	e.g select city form orders where city="北京市"
+	* make sure that oder by comes after the where 
+		* where clause operators 
+			see the database new1 -> where_operators
+	(1)  we use single quote delimit a string, and is case-sensitive
+		e.g select * from orders where city <> '北京市';
+	(2) we use <between and> to represnt range
+		e.g I want to find the order_id form 2 to 10 inclusive.
+		select * from orders
+		where order_id between 2 and 10;
+	(3) check for no value - IS NULL 
+		select * from products where firs_name is NULL
+*/		
 
- 
-
-
+/* practice 1.2:
+	1. Display the top 5 citys with the most order_pieces from orders
+		$ select * from orders order by order_pieces desc;
+	2. Rank the city by descending order_value and rank by ascending id
+		$ select * from orders order by order_value desc, order_id;
+	3. 
