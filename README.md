@@ -109,5 +109,30 @@ this will insert a row of data into the table we created
 
 7.important command for query
 ==============================
+(1) mysql> select * form personal_info
+this command will return the entire table
 
+(2) mysql> select column1, column2 ... from personal_info;
+* mysql> select colunm1, column2 ... from personal_info where id = 1; -- watch out here, we can not have multi condition like: id = 15, 25, 35
+* if we want to find specific name, we should use double quote. e.g. where a="guo";	
+* if we want to find name, where no specific name is found. We shoudl use %. e.g where last_name like "%juan%";
 
+in summary, where is followed by a condition. as long as the cindition can be found, we can use it to query something.
+e.g. select * from orders
+where 
+first_name = "guo"
+or 
+last_name like "%juan%";
+
+(3) the result after querying can be ordered. And it is ordered by the oerder_value. By default, order by increment, otherwise, it is ordered by descment.
+e.g. select * from orders where first_name = "guo"
+order by order_value desc; -- desc here means we order by descment 
+
+(4) we can limit the number of data we want
+e.g select (which columns)
+    from (what table)
+    where (on what condition)
+    order by (one what kind of order)
+    limit (how many lines you want to show)
+
+(5) 
