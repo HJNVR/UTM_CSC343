@@ -69,7 +69,12 @@
 
 /* practice 1.2:
 	1. Display the top 5 citys with the most order_pieces from orders
-		$ select * from orders order by order_pieces desc;
+		 select * from orders order by order_pieces desc;
 	2. Rank the city by descending order_value and rank by ascending id
-		$ select * from orders order by order_value desc, order_id;
-	3. 
+		select * from orders order by order_value desc, order_id;
+	3. List the cities with order_pieces>=10 and randk by ascending id;
+		select * from orders order by order_pieces >= 10 order by order_id;
+	4. List cities with order_value between 1000 and 2000 inclusive
+		select * from orders where order_value between 1000 and 2000;
+	5. 
+		 
