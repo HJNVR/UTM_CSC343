@@ -1,0 +1,17 @@
+-- 1
+SELECT COUNT(Name) AS 'Strange Nicknames' FROM Alias WHERE cid = 4;
+
+-- 2
+SELECT AVG(Weight) FROM 
+    (SELECT * FROM ExtraordinaryCitizen WHERE EXISTS 
+        (SELECT * FROM Superhero WHERE Superheroes.sid = ExtraordinaryCitizen.cid)) Supers
+    WHERE Age  > 50;
+
+-- 3
+SELECT vid FROM Villain WHERE PeopleKilled = (SELECT MAX(PeopleKilled) FROM Villain);
+
+-- 4
+SELECT DISTINCT cid, count(Name) FROM Alias GROUP BY cid HAVING COUNT(Name) > 3;
+
+-- 5 
+-- Check slides

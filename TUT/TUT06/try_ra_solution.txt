@@ -1,0 +1,42 @@
+1. 
+select E.eid 
+from Employees E, Certified C, Aircraft A
+where E.eid = C.eid and A.aid = C.aid and A.aname = 'Boeing' 
+
+
+π_eid (σ_ananme='Bieing'(Employees ⋈ Certified ⋈ Aircraft))
+
+2.
+select E.ename 
+from Employees E, Certified C, Aircraft A
+where E.eid = c.eid and A.aid = C.aid and A.name = 'Boeing'
+
+π_ename (σ_ananme='Bieing'(Employees ⋈ Certified ⋈ Aircraft))
+
+3.
+select A.aid
+from Aircraft A, Flights F
+where A.cruisingrange = non-stop' and F.from = Bonn' and F.to = 'Madras'
+
+4. 
+select F.fino
+from Flights F, Employees E, Certified C
+where E.eid = C.eid and E.salary > all (select E2.salary 
+					from Employees E2 
+					where E2.salary > 100,000)
+
+5.
+select E.ename
+from Employees E, Aircraft A, Certified C
+where E.eid = C.eid and A.aid = C.aid and A.cruisingrange >= 3,000 and A.aname <> 'Boeing'
+
+6.
+select E.eid
+from Employees E 
+where E.salary = (select Max(E2.salary
+		from Employee E2) 
+7. 
+select E.eid
+from Employees E
+where E.salary < (select Max(E2.salary
+		from Employee E2)
