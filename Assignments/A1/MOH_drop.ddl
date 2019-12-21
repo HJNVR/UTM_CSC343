@@ -1,0 +1,15 @@
+drop table if exists Person;
+drop table if exists Phone_number;
+drop table if exists Patient;
+drop table if exists Nurse;
+drop table if exists Physician;
+drop table if exists Hospital;
+drop table if exists Cares;
+drop table if exists Medical_department;
+drop table if exists Medical_test;
+drop table if exists Admits;
+drop table if exists Diagonse;
+drop table if exists Drug;
+drop table if exists Prescription;
+drop table if exists Health_insurance;
+drop table if exists Undergoes;

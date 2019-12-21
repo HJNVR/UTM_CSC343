@@ -1,0 +1,302 @@
+#Jing Huang, 1003490705, huang750
+#Si Tong Liu, 1004339628, liusi17 
+# Q (1)
+HName	City
+Toronto General Hospital	Toronto
+Toronto Western Hospital	Toronto
+University of Toronto Medical Centre	Hamilton
+Trillium Health Partners	Mississauga
+
+# Q (2)
+FirstName	LastName	Gender	DateOfBirth
+Cortney	Choice	F	2007-01-22
+Melvin	Rather	M	1995-06-03
+Rodney	Lockamy	F	2005-05-20
+Rosalind	Persechino	F	1988-06-09
+Cherelle	Welschmeyer	F	2001-05-25
+Natalya	Verso	M	2002-01-25
+Stanton	Rigazio	M	2000-09-24
+Cordell	Zinda	M	1988-07-23
+Shawnee	Kesten	M	2007-01-22
+Elfriede	Bakeley	F	1999-02-09
+Von	Aprigliano	F	1983-06-05
+Shelba	Kast	F	2008-05-22
+Glennis	Roseum	M	1988-06-07
+Essie	Fitzke	M	1988-04-04
+Thora	Daneker	M	2004-01-20
+Yolande	Staiano	F	1999-02-09
+Percy	Neelon	M	2007-01-22
+Bong	Fears	M	1999-02-08
+Sommer	Frere	M	2002-09-22
+Maddie	Foulds	F	2000-09-24
+Rochell	Wetherby	F	2009-09-20
+Lottie	Hegdahl	M	2008-09-26
+Tesha	Brang	M	1986-02-06
+Oliva	Ramerez	F	1994-06-01
+Hollis	Keomuangtai	F	1988-04-04
+Margot	Storrs	M	2002-09-22
+Shenika	Tapian	M	1988-06-10
+Harris	Sheck	F	2008-09-26
+Paris	Bellis	F	2008-05-22
+Billi	Kazar	M	1995-06-03
+Veta	Vandeberg	M	1994-06-01
+Carry	Ziller	M	1983-06-05
+Tamera	Crocker	F	1988-08-02
+Shay	Knieper	M	1983-06-05
+Amber	Windell	F	2005-05-20
+Terrilyn	Waska	M	2002-01-25
+Shannan	Cupit	F	2002-09-22
+Dona	Larner	F	2001-05-25
+Leonor	Beilinson	M	2014-05-27
+Dorcas	Diebold	M	2004-01-20
+Paulina	Arand	F	2000-09-24
+Thea	Petermeier	F	1983-06-08
+
+# Q(3) a
+Specialty	avg(P.Salary)
+General Surgery	200952.3810
+Ophthalmology	182500.0000
+Otolaryngology	190000.0000
+Radiology	140000.0000
+
+# Q(3) b
+Specialty	avg(P.Salary)
+General Surgery	199705.8824
+
+# Q(3) c
+YearsOfPractice	avg(N.Salary)
+28	160000.0000
+26	160000.0000
+24	160000.0000
+22	150000.0000
+21	150000.0000
+18	150000.0000
+17	144000.0000
+15	120000.0000
+14	120000.0000
+13	104000.0000
+12	100000.0000
+11	100000.0000
+10	100000.0000
+9	80000.0000
+8	80000.0000
+7	80000.0000
+2	60000.0000
+1	60000.0000
+
+# Q(4)
+HName	count(A.PatientID)
+Hamilton General Hospital	7
+Toronto General Hospital	21
+Toronto Western Hospital	12
+Trillium Health Partners	9
+University of Toronto Medical Centre	29
+
+# Q(5) a
+DName
+General Surgery
+Intensive Care Unit
+Ophthalmology
+Otolaryngology
+Radiology
+
+# Q(5) b
+DName	HName
+General Surgery	Toronto Western Hospital
+General Surgery	University of Toronto Medical Centre
+
+# Q(5) c
+DName
+Dermatology
+Oncology and hematology
+Neonatal ICU
+
+# Q(6) a
+FirstName	LastName
+Kristal	Bothe
+Yan	Bubrig
+Georgiana	Colbath
+Gregg	Epperheimer
+Stephanie	Garlett
+Adolph	Krivanec
+Rana	Lehn
+Florinda	Mackedanz
+Lazaro	Mollison
+Chi	Morgan
+Brinda	Mrkvicka
+Starr	Prothro
+Ellsworth	Rieg
+Freeman	Rudig
+Wayne	Shivers
+Florencia	Stadel
+Alberto	Stenquist
+Nadine	Swartzbeck
+Arlette	Torchio
+Darrin	Tumolillo
+
+# Q(6) b
+PatientID
+99655910
+99624636
+99610308
+99661577
+99620124
+99648102
+99624846
+99620783
+99616799
+99642422
+99645846
+
+# Q(7)
+Date
+2017-07-03
+
+# Q(8)
+DrugCode	total
+drg_28850201	18400
+
+# Q(9)
+ID	FirstName	LastName	Gender
+99619427	Brunilda	Coin	M
+99642131	Shenika	Tapian	M
+
+# Q(10) a
+Disease	Prognosis
+Attention Deficit/Hyperactivity Disorder	excellent
+Epidemic Typhus	excellent
+Colorectal (Colon) Cancer	poor
+Fragile X Syndrome (FXS)	fair
+Diphyllobothrium Infection [Diphyllobothriasis]	good
+CDI (Chronic Disease Indicators)	good
+Cerebral Palsy	very poor
+Diabetes	excellent
+Diet and Nutrition	fair
+Asthma	poor
+Diphtheria [Corynebacterium diphtheriae Infection]	very poor
+AIDS (Acquired Immunodeficiency Syndrome)	good
+Enterovirus D68	poor
+Enteric Diseases from Animals	good
+
+# Q(10) b
+PatientID	TotalCost
+99642131	550.00
+99665378	430.00
+99627956	310.00
+
+# Q(10) c
+PatientID	TotalCost
+99665378	1623
+99642131	1130
+99627956	659
+99620783	370
+99642157	331
+99664061	300
+99615376	153
+99620882	20
+99621221	20
+99655482	20
+99618797	10
+
+# Q(11)
+ID	FirstName	LastName
+99610308	Bernadine	Shufelt
+99611060	Melvin	Rather
+99611074	Lavelle	Lillywhite
+99612267	Shasta	Canonico
+99612305	Tawanna	Kuamoo
+99613091	Wilson	Nickelson
+99614409	Edmond	Buettner
+99615237	Paola	Perkins
+99615376	Trevor	Harnist
+99616277	Shakira	Westervelt
+99618774	Timothy	Bussert
+99618866	Stefanie	Prinkey
+99619113	Desirae	Oien
+99619939	Bev	Dermo
+99620124	Marshall	Fitgerald
+99620882	Shelton	Spannuth
+99621332	Nan	Weekly
+99622055	Louvenia	Abney
+99622397	Ryan	Phibbs
+99623141	Joaquin	Geitner
+99623419	Annamaria	Vanhuss
+99623422	Hana	Meisel
+99624334	Dorothea	Lowther
+99624716	Dion	Lamastus
+99625615	Tayna	Sine
+99626170	Hassie	Sarkin
+99627287	Shelba	Kast
+99628800	Jules	Erichsen
+99629373	Stephanie	Rolling
+99629669	Toi	Rollison
+99629779	Leslee	Matsuno
+99631138	Kelvin	Hasha
+99632402	Sommer	Frere
+99633214	Matt	Nickolich
+99634002	Aileen	Klukken
+99635163	Jesse	Wida
+99636025	Latonia	Helander
+99636946	Sherly	Vitrano
+99638299	Jeannine	Rippy
+99639233	Noble	Miyata
+99639491	Nobuko	Logwood
+99639966	Daniel	Dobler
+99640613	Verona	Jobst
+99640670	Nydia	Ancar
+99640787	Ruby	Sensibaugh
+99641166	Shala	Ogle
+99641181	Yong	Yestramski
+99641334	Angelyn	Wieand
+99642422	Slyvia	Stockham
+99643150	Ming	Eskew
+99643350	Malcom	Vereen
+99643369	Aron	Leuthold
+99643428	Amie	Okuniewski
+99644839	Sabine	Kaea
+99645166	Oneida	Pospishil
+99645381	Rene	Granier
+99645846	Malissa	Talty
+99645924	Shad	Reider
+99647155	Buck	Kotow
+99647546	Tequila	Pelletier
+99648102	Maricela	Conger
+99648249	Nguyet	Kitchens
+99648402	Nakisha	Russi
+99648570	Zoila	Lannigan
+99650187	Dolores	Moltz
+99650205	Caren	Doscher
+99650614	Bulah	Berkoff
+99650801	Lawanda	Jacocks
+99651536	Myra	Palenik
+99652373	Denna	Miklitz
+99654086	Irene	Benauides
+99654264	Kenia	Sharples
+99654361	Kathrine	Kaper
+99654491	Billi	Kazar
+99655048	Herminia	Penso
+99655278	Romana	Riesgraf
+99655482	Lucille	Hubbell
+99655646	Giovanna	Bacho
+99656154	Denny	Zeanah
+99656170	Tamera	Crocker
+99656171	Janae	Mair
+99656674	Ranee	Maye
+99656778	Lashaun	Casteneda
+99658409	Claudio	Hummell
+99658703	Sherell	Despain
+99658811	Ilda	Schuring
+99659163	Ellen	Fajen
+99659704	Colton	Pesqueira
+99659862	Gretchen	Mckeon
+99660060	Cletus	Stapels
+99661299	Asha	Zoldak
+99661988	Viola	Eddens
+99662039	King	Suman
+99662272	Esteban	Plantenberg
+99662586	Delsie	Cerao
+99664108	Adria	Gilliam
+99664504	Dorcas	Diebold
+99664554	Jacinta	Deppen
+99664641	Ollie	Oliverson
+99666188	Trinidad	Bredernitz
